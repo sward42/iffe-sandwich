@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IIFE Sandwich</title>
+	<link rel="stylesheet" type="text/css" href="sandwich.css">
+</head>
+<body>
+<h1>Sandwich Maker</h1>
+
+<div id="main-menu">
+	<div id="bread" class="item-list">
+		<label name="bread">Select Your Bread:</label></br>
+		<input type="checkbox" name="bread" value="white">White
+		<input type="checkbox" name="bread" value="wheat">Wheat
+		<input type="checkbox" name="bread" value="rye">Rye
+		<input type="checkbox" name="bread" value="ciabatta">Ciabatta
+		<input type="checkbox" name="bread" value="none">None
+	</div></br>
+	<div id="meat" class="item-list">
+		<label>Select Your Meat:</label></br>
+		<input type="checkbox" name="meat" value="turkey">Turkey
+		<input type="checkbox" name="meat" value="ham">Ham
+		<input type="checkbox" name="meat" value="beef">Roast Beef
+		<input type="checkbox" name="meat" value="bacon">Bacon
+		<input type="checkbox" name="meat" value="none">None
+	</div></br>
+	<div id="cheese" class="item-list">
+		<label>Select Your Cheese:</label></br>
+		<input type="checkbox" name="cheese" value="cheddar">Cheddar
+		<input type="checkbox" name="cheese" value="swiss">Swiss
+		<input type="checkbox" name="cheese" value="gorgonzola">Gorgonzola
+		<input type="checkbox" name="cheese" value="mozzarella">Mozzarella
+		<input type="checkbox" name="cheese" value="none">None
+
+	</div></br>
+	<div id="veggie" class="item-list">
+		<label>Select Your Veggies:</label></br>
+		<input type="checkbox" name="veggie" value="tomato">Tomato
+		<input type="checkbox" name="veggie" value="lettuce">Lettuce
+		<input type="checkbox" name="veggie" value="peppers">Green Peppers
+		<input type="checkbox" name="veggie" value="onion">Red Onion
+		<input type="checkbox" name="veggie" value="none">None
+
+	</div></br>
+	<div id="condiments" class="item-list">
+		<label>Select Your Condiments:</label></br>
+		<input type="checkbox" name="condiments" value="mayo">Mayonaise
+		<input type="checkbox" name="condiments" value="mustard">Mustard
+		<input type="checkbox" name="condiments" value="basil">Basil Spread
+		<input type="checkbox" name="condiments" value="spicy">Spicy Mayo
+		<input type="checkbox" name="condiments" value="none">None
+
+	</div></br>
+	<div id="yourSandwich">
+		<p>Your Sandwich:</p>
+		<textarea id="sandwichOrder"></textarea>
+	</div>
+	
+		<button id="checkout">Get Order Total</button>	
+		<p>Price</p>
+		<input type="text" name="price" id="totalPrice">
+	
+
+</div>
+
+<script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
+<script type="text/javascript" src="javascripts/meat.js"></script>
+<script type="text/javascript" src="javascripts/bread.js"></script>
+<script type="text/javascript" src="javascripts/cheese.js"></script>
+<script type="text/javascript" src="javascripts/veggies.js"></script>
+<script type="text/javascript" src="javascripts/condiments.js"></script>
+<script type="text/javascript" src="javascripts/DOMhandler.js"></script>
+</body>
+</html>
